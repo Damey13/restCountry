@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+}
+th.mat-sort-header-sorted {
+  color: #34c6eb;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+th {
+  color: #34c6eb;
+}
+.mat-row:nth-child(odd) {
+  background-color: #ebebeb;
+}
+.mat-form-field {
+  background-color: #ebebeb;
+}
+.mat-row:hover {
+  background-color: #e8eaf6;
+  cursor: pointer;
+}
