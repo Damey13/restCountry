@@ -11,4 +11,5 @@ export class countriesService {
     console.log(this.http.get("https://restcountries.com/v2/all"));
     return this.http.get("https://restcountries.com/v2/all");
   }
+  dataRow: any;
 }

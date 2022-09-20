@@ -1,1 +1,19 @@
-<p>country-details works!</p>
+<div class="whole">
+  <div class="details">Country details</div>
+  <div class="rest">
+    <div class="upper">
+      <div>
+        <img src="{{ countryinfo.flag }}" class="img" />
+      </div>
+      <div class="txt">
+        <div class="green">{{ countryinfo.name }}</div>
+        <div class="orange">Capital : {{ countryinfo.capital }}</div>
+      </div>
+    </div>
+    <div class="lower">
+      <div>Population : {{ countryinfo.population }}</div>
+      <div>Area :{{ countryinfo.area }}</div>
+      <div>Telephone Code : {{ countryinfo.numericCode }}</div>
+    </div>
+  </div>
+</div>

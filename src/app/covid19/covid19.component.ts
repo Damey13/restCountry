@@ -23,6 +23,7 @@ export class Covid19Component implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
     this.getAllReports();
+    console.log("Dam" + this.dataSource.data.values);
   }
 
   public getAllReports() {
@@ -37,5 +38,9 @@ export class Covid19Component implements OnInit {
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-  editContact() {}
+  public getRecord(row: any) {
+    console.log("QQQ" + row.name);
+    this.service.dataRow = row;
+    //  this.router.navigate(['/profile']);
+  }
 }
